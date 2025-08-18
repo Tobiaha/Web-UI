@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+a {
+  text-decoration-color: orange;
+  color: rgb(192, 136, 32);
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.header {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(31, 28, 28);
+}
+.logo {
+  vertical-align: top;
+  width: 150px;
+  height: 50px;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 30px;
+  color: orange;
+  float: left;
+}
+.headerbox {
+  height: 90px;
+  line-height: 90px; /*keskitetään teksti laatikoiden sisällä*/
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
+}
+
+.content {
+  height: 30vh;
+  width: 100%;
+  background-color: rgb(234, 224, 224);
+}
+/*
+.about {
+}
+
+.footer {
+}
+*/
