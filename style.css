@@ -8,7 +8,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: rgb(249, 249, 249);
 }
 p {
   padding: 0;
@@ -29,16 +28,17 @@ h1 {
 .header {
   height: 90px;
   width: 100%;
-  background-color: rgb(40, 72, 73);
+  background-color: rgb(58, 156, 201);
 }
 .logo {
+  font-family: sans-serif;
   vertical-align: top;
   width: 150px;
   height: 50px;
   margin-left: 40px;
   margin-right: 20px;
   margin-top: 5px;
-  color: rgb(160, 211, 235);
+  color: rgb(188, 216, 230);
   float: left;
 }
 .headerbox {
@@ -49,24 +49,27 @@ h1 {
   float: left;
 }
 .headerbox a {
+  font-family: sans-serif;
+  font-size: 16px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000000;
+  color: rgb(188, 216, 230);
+  border-bottom: 1px solid #01182e;
 }
 .content {
   height: 30vh;
   width: 100%;
-  background-color: rgb(241, 232, 232);
+  background-color: rgba(22, 140, 231, 0.74);
 }
 .about {
   height: 45vh;
   width: 100%;
-  background-color: lightgray;
+  background-color: rgb(6, 70, 119);
 }
 .footer {
   height: 60px;
   width: 100%;
-  background-color: rgb(141, 232, 252);
-  color: rgb(61, 61, 61);
+  background-color: rgb(15, 15, 54);
+  color: rgb(255, 255, 255);
   text-align: center;
   line-height: 50px; /*keskitetään teksti laatikoiden sisällä*/
   bottom: 0;
