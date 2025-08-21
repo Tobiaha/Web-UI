@@ -89,7 +89,7 @@ a:active {
 }
 .absolutecrab {
   position: absolute;
-  top: -35%;
+  top: -20%;
   right: 0;
   transform: rotate(180deg);
 }
