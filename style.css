@@ -112,7 +112,6 @@ a:active {
 .imagebox {
   width: 30%;
   height: auto;
-  margin: auto;
   margin-left: 20px;
   float: left;
   box-sizing: border-box;
