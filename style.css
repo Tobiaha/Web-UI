@@ -113,6 +113,7 @@ a:active {
   width: 30%;
   height: auto;
   margin: auto;
+  margin-left: 20px;
   float: left;
   box-sizing: border-box;
   margin-top: 20px;
