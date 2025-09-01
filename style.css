@@ -105,12 +105,15 @@ a:active {
   text-align: center;
 }
 
-.about {
+.aboutBox {
   height: 40vh;
   width: 100%;
   background-color: var(--indigo-dye);
   position: relative;
+  background-size: cover;
+  background-image: url('img/seafloorbg.jpeg');
 }
+
 .absolutecrab {
   position: absolute;
   top: -30%;
