@@ -8,7 +8,7 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    overflow-y: auto; 
+    overflow-y: auto;
   }
 }
 a {
@@ -27,6 +27,13 @@ p {
   margin: 0;
   font-size: 1em;
 }
+:root {
+  --gunmetal: #01232fff;
+  --prussian-blue: #022f46ff;
+  --indigo-dye: #01506fff;
+  --blue-green: #009fc7ff;
+  --sky-blue: #5ed6eeff;
+}
 .main {
   width: 75%;
   margin: auto;
@@ -35,11 +42,19 @@ p {
   .main {
     width: 100%; /* halutaa täys leveys pienemmillä laitteilla */
   }
+
+  button {
+    border: none;
+    border-radius: 6px;
+  }
+  #open_dialog {
+    margin: 0 auto;
+  }
 }
 .header {
   height: 90px;
   width: 100%;
-  background-color: rgb(58, 156, 201);
+  background-color: var(--sky-blue);
 }
 .shadow {
   box-shadow: 0 8px 6px -6px black;
@@ -53,7 +68,7 @@ p {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 5px;
-  color: rgb(188, 216, 230);
+  color: rgb(225, 231, 235);
   float: left;
 }
 .headerbox {
@@ -66,15 +81,13 @@ p {
 .headerbox a {
   font-family: sans-serif;
   font-size: 16px;
-  padding-bottom: 5px;
-  color: rgb(188, 216, 230);
-  border-bottom: 1px solid #01182e;
+  border-bottom: 1px solid var(--gunmetal);
 }
 a:visited {
-  color: rgb(188, 216, 230);
+  color: rgb(248, 249, 250);
 }
 a:hover {
-  color: rgb(2, 82, 122);
+  color: var(--prussian-blue);
 }
 a:active {
   color: rgb(0, 0, 0);
@@ -83,7 +96,7 @@ a:active {
 .content {
   height: 30vh;
   width: 100%;
-  background-color: rgba(14, 101, 168, 0.968);
+  background-color: var(--blue-green);
 }
 .contentbox {
   width: 70%;
@@ -95,7 +108,7 @@ a:active {
 .about {
   height: 40vh;
   width: 100%;
-  background-color: rgb(6, 70, 119);
+  background-color: var(--indigo-dye);
   position: relative;
 }
 .absolutecrab {
@@ -136,15 +149,15 @@ a:active {
 
 .emptybox {
   width: 100%;
-   min-height: calc(100vh - 90px - 30vh - 40vh - 60px);
-  background-color: rgb(5, 46, 78);
+  min-height: calc(100vh - 90px - 30vh - 40vh - 60px);
+  background-color: var(--prussian-blue);
   margin: auto;
   clear: both;
 }
 .footer {
   height: 60px;
   width: 100%;
-  background-color: rgb(15, 15, 54);
+  background-color: var(--gunmetal);
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 50px; /*keskitetään teksti laatikoiden sisällä*/

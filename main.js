@@ -1,14 +1,15 @@
 'use strict';
-const dialog = document.querySelector('dialog');
-const showButton = document.querySelector('dialog + button');
-const closeButton = document.querySelector('dialog button');
+const dialog = document.getElementById('myModal');
+const openButton = document.getElementById('openModal');
+const closeButton = document.getElementById('closeModal');
 
-// "Show the dialog" button opens the dialog modally
-showButton.addEventListener('click', () => {
+const openDialog = () => {
   dialog.showModal();
-});
+};
 
-// "Close" button closes the dialog
-closeButton.addEventListener('click', () => {
+const closeDialog = () => {
   dialog.close();
-});
+};
+
+openButton.addEventListener('click', openDialog);
+closeButton.addEventListener('click', closeDialog);

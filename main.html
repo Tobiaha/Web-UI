@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="main">
-      <dialog class="modal" id="modal">
-        <button id="close">Close</button>
-        <p>This modal dialog has a groovy backdrop!</p>
-      </dialog>
-      <button>Show the dialog</button>
-      <div class="header shadow">
+      <div class="header" shadow>
         <h1 class="logo">Atrain Seafood</h1>
         <div class="headerbox"><a href="">Kotisivu</a></div>
         <div class="headerbox"><a href="">Ruokalistat</a></div>
         <div class="headerbox"><a href="">Yhteystiedot</a></div>
+
+        <button id="openModal">Kirjaudu</button>
+        <!--button to open modal-->
+        <dialog class="modal" id="myModal">
+          <div class="spacing">
+            <p>Dialogi</p>
+            <button id="closeModal">Sulje</button>
+            <button id="send">Lähetä</button>
+          </div>
+        </dialog>
       </div>
+
       <div class="content">
         <p class="contentbox">kontent</p>
       </div>
@@ -33,6 +40,7 @@
             />
           </div>
         </div>
+
         <div class="textbox">
           <h2>Lisää meistä</h2>
           <h3>Lyhyt tarina Atraimesta</h3>
@@ -44,6 +52,7 @@
           </p>
         </div>
       </div>
+
       <div class="emptybox"></div>
 
       <div class="footer">
