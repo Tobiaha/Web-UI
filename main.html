@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <div class="main">
-      <div class="header" shadow>
+      <div class="header shadow">
         <h1 class="logo">Atrain Seafood</h1>
         <div class="headerbox"><a href="">Kotisivu</a></div>
         <div class="headerbox"><a href="">Ruokalistat</a></div>
@@ -18,11 +19,47 @@
         <button id="openModal">Kirjaudu</button>
         <!--button to open modal-->
         <dialog class="modal" id="myModal">
-          <div class="spacing">
-            <p>Dialogi</p>
-            <button id="closeModal">Sulje</button>
-            <button id="send">Lähetä</button>
-          </div>
+          <form class="myForm" action="">
+
+            <h3 class="main_cl">Rekisteröidy tiedoillasi</h3>
+            <img id="formimg" src="img/crabrave.jpg"></img>
+            <fieldset class="fieldset">
+              <label for="yourName">Sukunimi, minimi 3 kirjainta:</label>
+              <input
+                type="text"
+                id="yourName"
+                name="yourName"
+                placeholder="Sukunimi"
+                minlength="3"
+                max="30"
+                required
+              />
+
+              <!-- @metropolia.fi -->
+              <label for="yourEmail">Email osoite (@metropolia.fi):</label>
+              <input
+                type="email"
+                id="yourEmail"
+                name="yourEmail"
+                pattern=".+@metropolia\.fi"
+                required
+              />
+
+              <!-- yhden ison kirjaimen, sekä yhden numeron, mmin 8 pitkä -->
+              <label for="passWord">Salasana:</label>
+              <input
+                type="password"
+                id="passWord"
+                name="passWord"
+                pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required
+              />
+              <br />
+              <input type="submit" value="submit" />
+              <input type="button" value="close" id="closeModal" />
+            </fieldset>
+          </form>
+
         </dialog>
       </div>
 

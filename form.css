@@ -1,0 +1,60 @@
+.modal {
+  width: 400px;
+  height: 800px;
+  max-width: 90%;
+  background-color: var(--prussian-blue);
+}
+.myForm {
+  padding: 20px;
+  border-radius: 15px;
+}
+.fieldset {
+  margin-bottom: 15px;
+}
+
+#formimg {
+  width: 100%;
+  margin: auto;
+  object-fit: cover;
+  display: block;
+  padding: 10px;
+}
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.myForm input {
+  margin: 0 0.25rem;
+  border-radius: 5px;
+  padding: 10px;
+  border-left: 10px solid;
+  transition: border-color 1s ease-out;
+  border-bottom: 1px solid gray;
+}
+
+input[type='submit'] {
+  margin-top: 30px;
+}
+
+::placeholder {
+  color: rgba(165, 101, 101, 0.662);
+}
+
+.myForm input:optional {
+  border-left-color: rgb(140, 140, 140);
+}
+/* .myForm input:required {
+    border-left-color: rgb(255, 0, 0);
+} */
+.myForm input:invalid {
+  border-left-color: orange;
+}
+.myForm input:valid {
+  border-left-color: green;
+}
+
+.myForm label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
