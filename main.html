@@ -1,100 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="form.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <div class="main">
-      <div class="header shadow">
-        <h1 class="logo">Atrain Seafood</h1>
-        <div class="headerbox"><a href="">Kotisivu</a></div>
-        <div class="headerbox"><a href="">Ruokalistat</a></div>
-        <div class="headerbox"><a href="">Yhteystiedot</a></div>
 
-        <button id="openModal">Kirjaudu</button>
-        <!--button to open modal-->
-        <dialog class="modal" id="myModal">
-          <form class="myForm" action="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="form.css" />
+  <script src="main.js" defer></script>
+</head>
 
-            <h3 class="main_cl">Rekisteröidy tiedoillasi</h3>
-            <img id="formimg" src="img/crabrave.jpg"></img>
-            <fieldset class="fieldset">
-              <label for="yourName">Sukunimi, minimi 3 kirjainta:</label>
-              <input
-                type="text"
-                id="yourName"
-                name="yourName"
-                placeholder="Sukunimi"
-                minlength="3"
-                max="30"
-                required
-              />
+<body>
+  <div class="main">
+    <div class="header shadow">
 
-              <!-- @metropolia.fi -->
-              <label for="yourEmail">Email osoite (@metropolia.fi):</label>
-              <input
-                type="email"
-                id="yourEmail"
-                name="yourEmail"
-                pattern=".+@metropolia\.fi"
-                required
-              />
+      <h1 class="logo">Atrain Seafood</h1>
+      <button id="openModal">Kirjaudu</button>
+      <div class="headerbox"><a href="">Kotisivu</a></div>
+      <div class="headerbox"><a href="">Ruokalistat</a></div>
+      <div class="headerbox"><a href="">Yhteystiedot</a></div>
 
-              <!-- yhden ison kirjaimen, sekä yhden numeron, mmin 8 pitkä -->
-              <label for="passWord">Salasana:</label>
-              <input
-                type="password"
-                id="passWord"
-                name="passWord"
-                pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
-                required
-              />
-              <br />
-              <input type="submit" value="submit" />
-              <input type="button" value="close" id="closeModal" />
-            </fieldset>
-          </form>
 
-        </dialog>
-      </div>
 
-      <div class="content">
-        <p class="contentbox">kontent</p>
-      </div>
-      <div class="aboutBox">
-        <img class="absolutecrab" src="img/crab.jpeg" alt="crab" />
-        <div class="imagebox">
-          <div class="terassikuva">
-            <img
-              class="terassi"
-              src="img/terassikuvake.jpg"
-              alt="Terassikuva"
-            />
-          </div>
-        </div>
 
-        <div class="textbox">
-          <h2>Lisää meistä</h2>
-          <h3>Lyhyt tarina Atraimesta</h3>
-          <p>
-            Atrain Seafood on perustettu vuonna 2023. Olemme erikoistuneet
-            tarjoamaan tuoreita ja herkullisia meren antimia. Teemme yhteistyötä
-            paikallisten kalastajien kanssa varmistaaksemme, että tarjoamme
-            asiakkaille vain parasta meren ruokaa.
-          </p>
-        </div>
-      </div>
 
-      <div class="emptybox"></div>
 
-      <div class="footer">
-        <p>© 2023 Atrain Seafood.</p>
+      <!--button to open modal-->
+      <dialog class="modal" id="myModal">
+        <form class="myForm" action="">
+
+          <h3 class="main_cl">Rekisteröidy tiedoillasi</h3>
+          <img id="formimg" src="img/crabrave.jpg"></img>
+          <fieldset class="fieldset">
+            <label for="yourName">Sukunimi, minimi 3 kirjainta:</label>
+            <input type="text" id="yourName" name="yourName" placeholder="Sukunimi" minlength="3" max="30" required />
+
+            <!-- @metropolia.fi -->
+            <label for="yourEmail">Email osoite (@metropolia.fi):</label>
+            <input type="email" id="yourEmail" name="yourEmail" pattern=".+@metropolia\.fi" required />
+
+            <!-- yhden ison kirjaimen, sekä yhden numeron, mmin 8 pitkä -->
+            <label for="passWord">Salasana:</label>
+            <input type="password" id="passWord" name="passWord" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+              required />
+            <br />
+            <input type="submit" value="submit" />
+            <input type="button" value="close" id="closeModal" />
+          </fieldset>
+        </form>
+      </dialog>
+    </div>
+
+
+    <div class="herocontainer">
+      <div class="herobanner">
+        <p class="textBox">kontent</p>
+      <div class="foodItems"></div>
       </div>
     </div>
-  </body>
+
+  <div class="aboutBox">
+    <img class="absolutecrab" src="img/crab.jpeg" alt="crab" />
+    <div class="imagebox">
+      <div class="terassikuva">
+        <img class="terassi" src="img/terassikuvake.jpg" alt="Terassikuva" />
+      </div>
+    </div>
+
+    <div class="textbox">
+      <h2>Lisää meistä</h2>
+      <h3>Lyhyt tarina Atraimesta</h3>
+      <p>
+        Atrain Seafood on perustettu vuonna 2023. Olemme erikoistuneet
+        tarjoamaan tuoreita ja herkullisia meren antimia. Teemme yhteistyötä
+        paikallisten kalastajien kanssa varmistaaksemme, että tarjoamme
+        asiakkaille vain parasta meren ruokaa.
+      </p>
+    </div>
+  </div>
+
+  <div class="emptybox"></div>
+
+  <div class="footer">
+    <p>© 2023 Atrain Seafood.</p>
+  </div>
+  </div>
+</body>
+
 </html>
