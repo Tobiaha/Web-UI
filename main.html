@@ -12,18 +12,23 @@
 
 <body>
   <div class="main">
-    <div class="header shadow">
-
+    <div class="header">
       <h1 class="logo">Atrain Seafood</h1>
+
       <button id="openModal">Kirjaudu</button>
       <div class="headerbox"><a href="">Kotisivu</a></div>
       <div class="headerbox"><a href="">Ruokalistat</a></div>
       <div class="headerbox"><a href="">Yhteystiedot</a></div>
 
 
-
-
-
+      <!-- Sidebar for mobile -->
+       <button class="sidebarbutton" id="sidebarToggle">|||</button>
+      <div class="sidebar" id="sidebar">
+        <a href="#home">Kotisivu</a>
+        <a href="#menu">Ruokalistat</a>
+        <a href="#contact">Yhteystiedot</a>
+      </div>
+      </div>
 
       <!--button to open modal-->
       <dialog class="modal" id="myModal">
@@ -49,41 +54,47 @@
           </fieldset>
         </form>
       </dialog>
-    </div>
 
 
-    <div class="herocontainer">
+    <!-- Flexbox osio-->
+    <section class="herocontainer">
       <div class="herobanner">
-        <p class="textBox">kontent</p>
-      <div class="foodItems"></div>
-      </div>
-    </div>
+        <div class="foodItems"></div>
+        </div>
 
-  <div class="aboutBox">
-    <img class="absolutecrab" src="img/crab.jpeg" alt="crab" />
-    <div class="imagebox">
-      <div class="terassikuva">
-        <img class="terassi" src="img/terassikuvake.jpg" alt="Terassikuva" />
-      </div>
-    </div>
+    </section>
+     <!-- Grid osio
+      <section>
+        <h2>Grid</h2>
+      </section> -->
+    <section>
+      <div class="aboutBox">
+        <img class="absolutecrab" src="img/crab.jpeg" alt="crab" />
+        <div class="imagebox">
+          <div class="terassikuva">
+            <img class="terassi" src="img/terassikuvake.jpg" alt="Terassikuva" />
+          </div>
+        </div>
 
-    <div class="textbox">
-      <h2>Lisää meistä</h2>
-      <h3>Lyhyt tarina Atraimesta</h3>
-      <p>
-        Atrain Seafood on perustettu vuonna 2023. Olemme erikoistuneet
-        tarjoamaan tuoreita ja herkullisia meren antimia. Teemme yhteistyötä
-        paikallisten kalastajien kanssa varmistaaksemme, että tarjoamme
-        asiakkaille vain parasta meren ruokaa.
-      </p>
-    </div>
+        <div class="textbox">
+          <h2>Lisää meistä</h2>
+          <h3>Lyhyt tarina Atraimesta</h3>
+          <p>
+            Atrain Seafood on perustettu vuonna 2023. Olemme erikoistuneet
+            tarjoamaan tuoreita ja herkullisia meren antimia. Teemme yhteistyötä
+            paikallisten kalastajien kanssa varmistaaksemme, että tarjoamme
+            asiakkaille vain parasta meren ruokaa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="emptybox"></div>
+
+
   </div>
-
-  <div class="emptybox"></div>
-
   <div class="footer">
     <p>© 2023 Atrain Seafood.</p>
-  </div>
   </div>
 </body>
 

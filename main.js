@@ -13,3 +13,18 @@ const closeDialog = () => {
 
 openButton.addEventListener('click', openDialog);
 closeButton.addEventListener('click', closeDialog);
+
+//Mobiilin sidebar
+
+const sidebarToggle = document.getElementById('sidebarToggle');
+const sidebar = document.getElementById('sidebar');
+
+sidebarToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+
+document.querySelectorAll('.sidebar a').forEach((link) => {
+  link.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+  });
+});
